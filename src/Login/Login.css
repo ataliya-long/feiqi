@@ -1,0 +1,74 @@
+/* Login Modal Background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* 遮罩背景颜色，半透明 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* 保证在最顶层 */
+}
+
+/* Login Modal Window */
+.modal-content {
+  background-color: #ffe4e6; /* 柔和的粉色背景 */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 微弱阴影 */
+  position: relative; /* 让关闭按钮相对这个容器定位 */
+  width: 400px; /* 设置窗口的宽度 */
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* 动漫风格字体 */
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 5px;  /* 调整到紧贴窗口顶部 */
+  right: 5px;  /* 调整到紧贴窗口右侧 */
+  background-color: transparent; /* 透明背景 */
+  border: none;
+  font-size: 16px;  /* 缩小字体 */
+  font-weight: bold;
+  color: #ff69b4; /* 可爱的粉色关闭按钮 */
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.3s ease; /* 增加关闭按钮的交互感 */
+}
+
+.close-btn:hover {
+  transform: scale(1.1); /* 悬浮时稍微放大 */
+}
+
+/* Form Elements */
+.modal-content h2 {
+  color: #ff1493; /* 深粉色标题 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ffb6c1;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.modal-content button {
+  background-color: #ff69b4; /* 按钮粉色背景 */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.modal-content button:hover {
+  background-color: #ff1493; /* 按钮悬浮时的颜色 */
+}

@@ -1,0 +1,6 @@
+.text-container {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 10px; /* 根据需要调整与其他组件的间距 */
+  }
